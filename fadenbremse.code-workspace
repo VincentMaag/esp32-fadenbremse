@@ -1,0 +1,67 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+
+	"settings": {
+
+		"terminal.integrated.profiles.windows": {
+			"Command Prompt esp32": {
+				"path": [
+					"${env:windir}\\Sysnative\\cmd.exe",
+					"${env:windir}\\System32\\cmd.exe"
+				],
+				"args": ["/k", "C:/esp32_idf/esp-idf_4_0/export.bat"],
+				"icon": "terminal-cmd"
+			},
+		},
+		
+		"files.associations": {
+			"ledc.h": "c",
+			"websocket_server.h": "c",
+			"websocket.h": "c",
+			"http_parser.h": "c",
+			"nvs_flash.h": "c",
+			"event_groups.h": "c",
+			"freertos.h": "c",
+			"freertosconfig.h": "c",
+			"random": "c",
+			"timer.h": "c",
+			"fb_mean_control.h": "c",
+			"fb_projdefs.h": "c",
+			"stdlib.h": "c",
+			"esp_wifi.h": "c",
+			"tcpip_adapter.h": "c",
+			"sdkconfig.h": "c",
+			"ip4_addr.h": "c",
+			"esp_event_loop.h": "c",
+			"chrono": "c",
+			"limits": "c",
+			"array": "c",
+			"string": "c",
+			"string_view": "c",
+			"string.h": "c",
+			"*.ipp": "c",
+			"math.h": "c",
+			"uart.h": "c",
+			"time.h": "c",
+			"cmath": "c",
+			"complex": "c",
+			"*.tcc": "c",
+			"fb_sd_card.h": "c",
+			"gpio.h": "c",
+			"esp_vfs_fat.h": "c",
+			"task.h": "c",
+			"sdmmc_cmd.h": "c",
+			"fb_esp_time.h": "c",
+			"ctime": "c",
+			"queue.h": "c",
+			"cstdio": "cpp",
+			"fb_blinker.h": "c",
+			"projdefs.h": "c",
+			"new": "cpp"
+		}
+	}
+}

@@ -1,0 +1,651 @@
+/* ================================================= */
+/* general ========================================= */
+/* ================================================= */
+#body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+button:active{background-color:darkgrey;
+              transition: all 0.0s ease;
+              transition-delay: 0s;
+              transition-duration: 0s;
+              border-color: black;
+              }
+
+/* ================================================= */
+/* === Status and Machine Nr ======================= */
+/* ================================================= */
+#textTitle{
+  position: absolute;
+	transition: 0.5s ease;
+  width: 200px;
+  /* height: 30px; */
+  left: 400px;
+  top: 10px;
+  font-size: 200%;
+  text-align: center;
+  font-weight: bold;
+} 
+#textMaschineStatus{
+  position: absolute;
+	transition: 0.5s ease;
+  width: 200px;
+  /* height: 30px; */
+  left: 400px;
+  top: 55px;
+  font-size: 150%;
+  text-align: center;
+  font-weight: bold;
+} 
+#controlModeStatus{
+  position: absolute;
+	transition: 0.5s ease;
+  width: 250px;
+  height: 30px;
+  left: 10px;
+  top: 65px;
+  font-size: 120%;
+  text-align: left;
+}
+#diagnosticOutput{
+  position: absolute;
+	transition: 0.5s ease;
+  width: 250px;
+  height: 30px;
+  left: 10px;
+  top: 5px;
+  font-size: 120%;
+  text-align: left;
+}
+#diagnosticButton{
+	position: absolute;
+	transition: 0.5s ease;
+  width: 50px;
+  height: 30px;
+  left: 10px;
+  top: 30px;
+  /* font-size: 100%; */
+  /* font-weight: bold; */
+}
+/* ================================================= */
+/* === brake timing (opening/closing time ========== */
+/* ================================================= */
+#openingClosingButton{
+	position: absolute;
+	transition: 0.5s ease;
+  width: 100px;
+  height: 70px;
+  left: 1030px;
+  top: 10px;
+  font-size: 100%;
+}
+#InputOpeningTime{
+  position: absolute;
+	transition: 0.5s ease;
+  border-style: solid;
+  border-width: 1px;
+  width: 70px;
+  height: 30px;
+  left: 940px;
+  top: 10px;
+  font-size: 150%;
+  text-align: center;
+}
+#text20{
+  position: absolute;
+	transition: 0.5s ease;
+  /* width: 250px; */
+  /* height: 30px; */
+  left: 745px;
+  top: 13px;
+  font-size: 120%;
+  text-align: left;
+}   
+#InputClosingTime{
+  position: absolute;
+	transition: 0.5s ease;
+  border-style: solid;
+  border-width: 1px;
+  width: 70px;
+  height: 30px;
+  left: 940px;
+  top: 50px;
+  font-size: 150%;
+  text-align: center;
+}
+#text21{
+  position: absolute;
+	transition: 0.5s ease;
+  /* width: 250px; */
+  /* height: 30px; */
+  left: 745px;
+  top: 53px;
+  font-size: 120%;
+  text-align: left;
+}
+/* ================================================= */
+/* === LEFT side =================================== */
+/* ================================================= */
+#text03{
+  position: absolute;
+	transition: 0.5s ease;
+  width: 250px;
+  height: 30px;
+  left: 20px;
+  top: 100px;
+  font-size: 180%;
+  text-align: left;
+  font-weight: bold;
+  color: green;
+}    
+#text01{
+  position: absolute;
+	transition: 0.5s ease;
+  width: 250px;
+  height: 30px;
+  left: 20px;
+  top: 140px;
+  font-size: 150%;
+  text-align: left;
+}    
+#text02{
+  position: absolute;
+	transition: 0.5s ease;
+  width: 250px;
+  height: 30px;
+  left: 20px;
+  top: 175px;
+  font-size: 150%;
+  text-align: left;
+}    
+#text00{
+  position: absolute;
+	transition: 0.5s ease;
+  width: 250px;
+  height: 30px;
+  left: 20px;
+  top: 210px;
+  font-size: 150%;
+  text-align: left;
+}
+#InputAutoSetpoint1{
+  position: absolute;
+	transition: 0.5s ease;
+  border-style: solid;
+  border-width: 1px;
+  width: 70px;
+  height: 30px;
+  left: 270px;
+  top: 140px;
+  font-size: 150%;
+  text-align: center;
+}
+#outputBTSR1 {
+  position: absolute;
+  border-style: solid;
+  border-width: 2px;
+  margin: auto;
+  text-align: center;
+  font-size: 150%;
+  left: 270px;
+  top: 175px;
+  width: 70px;
+  font-weight: bold;
+  background-color:green;
+}
+#InputManualSetpoint1{
+  position: absolute;
+	transition: 0.5s ease;
+  border-style: solid;
+  border-width: 1px;
+  width: 70px;
+  height: 30px;
+  left: 270px;
+  top: 210px;
+  font-size: 150%;
+  text-align: center;
+  background-color:lightgrey;
+}
+#setpointButton1{
+	position: absolute;
+	transition: 0.5s ease;
+  width: 100px;
+  height: 100px;
+  left: 380px;
+  top: 140px;
+  font-size: 100%;
+  font-weight: bold;
+}
+/* #setpointButton1:active{background-color:darkgrey;} */
+/* ================================================= */
+/* === RIGHT side ================================== */
+/* ================================================= */
+#text13{
+  position: absolute;
+	transition: 0.5s ease;
+  width: 250px;
+  height: 30px;
+  left: 520px;
+  top: 100px;
+  font-size: 180%;
+  text-align: left;
+  font-weight: bold;
+  color: blue
+}   
+#text11{
+  position: absolute;
+	transition: 0.5s ease;
+  width: 250px;
+  height: 30px;
+  left: 520px;
+  top: 140px;
+  font-size: 150%;
+  text-align: left;
+}    
+#text12{
+  position: absolute;
+	transition: 0.5s ease;
+  width: 250px;
+  height: 30px;
+  left: 520px;
+  top: 175px;
+  font-size: 150%;
+  text-align: left;
+} 
+#text10{
+  position: absolute;
+	transition: 0.5s ease;
+  width: 250px;
+  height: 30px;
+  left: 520px;
+  top: 210px;
+  font-size: 150%;
+  text-align: left;
+}
+#InputAutoSetpoint2{
+  position: absolute;
+	transition: 0.5s ease;
+  border-style: solid;
+  border-width: 1px;
+  width: 70px;
+  height: 30px;
+  left: 770px;
+  top: 140px;
+  font-size: 150%;
+  text-align: center;
+}
+#outputBTSR2{
+  position: absolute;
+  border-style: solid;
+  border-width: 2px;
+  margin: auto;
+  text-align: center;
+  font-size: 150%;
+  left: 770px;
+  top: 175px;
+  width: 70px;
+  font-weight: bold;
+  background-color:blue;
+}
+#InputManualSetpoint2{
+  position: absolute;
+	transition: 0.5s ease;
+  border-style: solid;
+  border-width: 1px;
+  width: 70px;
+  height: 30px;
+  left: 770px;
+  top: 210px;
+  font-size: 150%;
+  text-align: center;
+  background-color:lightgrey;
+}
+#setpointButton2{
+	position: absolute;
+	transition: 0.5s ease;
+  width: 100px;
+  height: 100px;
+  left: 880px;
+  top: 140px;
+  font-size: 100%;
+  font-weight: bold;
+}
+/* #setpointButton2:active{background-color:darkgrey;} */
+/* ================================================= */
+/* === CHART ======================================= */
+/* ================================================= */
+/* Chart and buttons */
+#changeToSensor1button{
+	position: absolute;
+	transition: 0.5s ease;
+  left: 1030px;
+  top: 280px;
+  height: 70px;
+  width: 100px;
+}
+#changeToSensor2button{
+	position: absolute;
+	transition: 0.5s ease;
+  left: 1030px;
+  top: 380px;
+  height: 70px;
+  width: 100px;
+}
+#changeToSensorAllbutton{
+	position: absolute;
+	transition: 0.5s ease;
+  left: 1030px;
+  top: 480px;
+  height: 70px;
+  width: 100px;
+}
+#myChart{
+	position: absolute;
+	transition: 0.5s ease;
+  left: 0px;
+  top: 260px;
+}
+/* ================================================= */
+/* === ConfigMode ================================== */
+/* ================================================= */
+#configurationButton{
+	position: absolute;
+	transition: 0.5s ease;
+  width: 150px;
+  height: 50px;
+  left: 50px;
+  top: 620px;
+  font-size: 100%;
+}
+#pswdText{
+  position: absolute;
+	transition: 0.5s ease;
+  width: 140px;
+  height: 30px;
+  left: 50px;
+  top: 680px;
+  font-size: 100%;
+  text-align: left;
+}
+#pswd{
+	position: absolute;
+	transition: 0.5s ease;
+  border-style: solid;
+  border-width: 2px;
+  width: 140px;
+  height: 30px;
+  left: 50px;
+  top: 700px;
+  font-size: 100%;
+}
+#logButton{
+	position: absolute;
+	transition: 0.5s ease;
+  width: 150px;
+  height: 40px;
+  left: 50px;
+  top: 750px;
+  font-size: 100%;
+}
+/* ================================================= */
+/* === Chart Y Limit =============================== */
+/* ================================================= */
+#chartYLimitButton{
+	position: absolute;
+	transition: 0.5s ease;
+  width: 100px;
+  height: 70px;
+  left: 250px;
+  top: 620px;
+  font-size: 100%;
+}
+#chartYLimit{
+  position: absolute;
+	transition: 0.5s ease;
+  border-style: solid;
+  border-width: 1px;
+  width: 70px;
+  height: 30px;
+  left: 370px;
+  top: 620px;
+  font-size: 150%;
+  text-align: center;
+}
+
+/* ================================================= */
+/* === Machine Angle Offset ======================== */
+/* ================================================= */
+#setMachineAngleOffsetButton{
+	position: absolute;
+	transition: 0.5s ease;
+  width: 100px;
+  height: 70px;
+  left: 250px;
+  top: 700px;
+  font-size: 100%;
+}
+#InputMachineAngleOffset{
+  position: absolute;
+	transition: 0.5s ease;
+  border-style: solid;
+  border-width: 1px;
+  width: 70px;
+  height: 30px;
+  left: 370px;
+  top: 700px;
+  font-size: 150%;
+  text-align: center;
+}
+#outputMachineAngle{
+  position: absolute;
+	transition: 0.5s ease;
+  border-style: solid;
+  border-width: 1px;
+  width: 70px;
+  height: 30px;
+  left: 370px;
+  top: 740px;
+  font-size: 150%;
+  text-align: center;
+  color: green;
+  font-weight: bold;
+}
+/* ================================================= */
+/* === IP Adress =================================== */
+/* ================================================= */
+#ipAdressButton{
+	position: absolute;
+	transition: 0.5s ease;
+  width: 100px;
+  height: 70px;
+  left: 470px;
+  top: 620px;
+  font-size: 100%;
+}
+#ipInput1{
+  position: absolute;
+	transition: 0.5s ease;
+  border-style: solid;
+  border-width: 1px;
+  width: 70px;
+  height: 30px;
+  left: 580px;
+  top: 620px;
+  font-size: 150%;
+  text-align: center;
+}
+#ipInput2{
+  position: absolute;
+	transition: 0.5s ease;
+  border-style: solid;
+  border-width: 1px;
+  width: 70px;
+  height: 30px;
+  left: 660px;
+  top: 620px;
+  font-size: 150%;
+  text-align: center;
+}
+#ipInput3{
+  position: absolute;
+	transition: 0.5s ease;
+  border-style: solid;
+  border-width: 1px;
+  width: 70px;
+  height: 30px;
+  left: 740px;
+  top: 620px;
+  font-size: 150%;
+  text-align: center;
+}
+#ipInput4{
+  position: absolute;
+	transition: 0.5s ease;
+  border-style: solid;
+  border-width: 1px;
+  width: 70px;
+  height: 30px;
+  left: 820px;
+  top: 620px;
+  font-size: 150%;
+  text-align: center;
+}
+#ssidInput{
+  position: absolute;
+	transition: 0.5s ease;
+  border-style: solid;
+  border-width: 1px;
+  width: 190px;
+  height: 30px;
+  left: 580px;
+  top: 655px;
+  font-size: 150%;
+  text-align: center;
+}
+#textPW{
+  position: absolute;
+	transition: 0.5s ease;
+  width: 250px;
+  height: 30px;
+  left: 780px;
+  top: 660px;
+  font-size: 120%;
+  text-align: left;
+  font-style: italic;
+}
+
+/* ================================================= */
+/* === Calibration ================================= */
+/* ================================================= */
+#calibrateButton{
+	position: absolute;
+	transition: 0.5s ease;
+  width: 100px;
+  height: 70px;
+  left: 470px;
+  top: 700px;
+  font-size: 100%;
+  /*animation: glowing 1500ms infinite;*/
+}
+@keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+@keyframes glowingGrey {
+  0% { background-color: grey; box-shadow: 0 0 3px grey; }
+  50% { background-color: grey; box-shadow: 0 0 40px grey; }
+  100% { background-color: grey; box-shadow: 0 0 3px grey; }
+}
+
+#outputCalibHigh{
+  position: absolute;
+	transition: 0.5s ease;
+  border-style: solid;
+  border-width: 1px;
+  width: 70px;
+  height: 30px;
+  left: 580px;
+  top: 700px;
+  font-size: 150%;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+#outputCalibLow{
+  position: absolute;
+	transition: 0.5s ease;
+  border-style: solid;
+  border-width: 1px;
+  width: 70px;
+  height: 30px;
+  left: 580px;
+  top: 740px;
+  font-size: 150%;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+
+
+
+/* ================================================= */
+/* === MonitoringMode ============================== */
+/* ================================================= */
+#onlyMonitoringButton{
+	position: absolute;
+	transition: 0.5s ease;
+  width: 100px;
+  height: 70px;
+  left: 800px;
+  top: 700px;
+  font-size: 100%;
+}
+/* ================================================= */
+/* toggle control mode  */
+/* ================================================= */
+#manualButton{
+	position: absolute;
+	transition: 0.5s ease;
+  width: 100px;
+  height: 70px;
+  left: 920px;
+  top: 620px;
+  font-size: 100%;
+  font-weight: bold;
+}
+#autoButton{
+	position: absolute;
+	transition: 0.5s ease;
+  width: 100px;
+  height: 70px;
+  left: 1030px;
+  top: 620px;
+  font-size: 100%;
+  font-weight: bold;
+}
+/* ================================================= */
+/* enable/disable ================================== */
+/* ================================================= */
+#enablebutton{
+	position: absolute;
+	transition: 0.5s ease;
+  width: 100px;
+  height: 70px;
+  left: 920px;
+  top: 700px;
+  font-size: 150%;
+  font-weight: bold;
+}
+#disablebutton{
+	position: absolute;
+	transition: 0.5s ease;
+  width: 100px;
+  height: 70px;
+  left: 1030px;
+  top: 700px;
+  font-size: 150%;
+  font-weight: bold;
+}

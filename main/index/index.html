@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF8">
+        <meta name="format-detection" content="telephone=no">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <title>FADENBREMSE</title>
+    </head>
+    <body onload="init();" id="body">
+        <!-- Title and Status -->
+        <p><span id="textTitle">Maschine Nr</span></p>
+        <p><span id="textMaschineStatus">Trying to connect...</span></p>
+        <!-- enable/disable hdrives -->
+        <button id="enablebutton" hidden>enable</button>
+        <button id="disablebutton" hidden>disable</button>
+        <button id="logButton">Export Log</button>
+        <!-- toggle control Mode -->
+        <button id="manualButton" hidden>MANUAL MODE</button>
+        <button id="autoButton" hidden>AUTO MODE</button>
+        <p><span id="controlModeStatus" hidden>MANUAL MODE</span></p>
+        <!-- Diagnostic bits -->
+        <p><span id="diagnosticOutput" >00000000</span></p>
+        <button id="diagnosticButton" >Diag</button>
+        <!-- input and output values LEFT -->
+        <p><span id="text00" hidden>Weft Brake [%]:</span></p>
+        <p><span id="text01" hidden>Auto Setpoint [cN]:</span></p>
+        <p><span id="text02" >Mean Tension [cN]:</span></p>
+        <p><span id="text03" >Channel 1:</span></p>
+        <input type="number" id="InputManualSetpoint1" value="50" hidden>
+        <input type="number" id="InputAutoSetpoint1" value="15" hidden>
+        <output id="outputBTSR1">50 cN</output>
+        <button id="setpointButton1" hidden>Update Setpoints</button>
+        <!-- input and output values RIGHT -->
+        <p><span id="text10" hidden>Weft Brake [%]:</span></p>
+        <p><span id="text11" hidden>Auto Setpoint [cN]:</span></p>
+        <p><span id="text12" >Mean Tension [cN]:</span></p>
+        <p><span id="text13" >Channel 2:</span></p>
+        <input type="number" id="InputManualSetpoint2" value="51" hidden>
+        <input type="number" id="InputAutoSetpoint2" value="14" hidden>
+        <output id="outputBTSR2">38 cN</output>        
+        <button id="setpointButton2" hidden>Update Setpoints</button>
+        <!-- Chart buttons -->
+        <button id="changeToSensor1button">View Sensor 1</button>
+        <button id="changeToSensor2button">View Sensor 2</button>
+        <button id="changeToSensorAllbutton">View Sensor 1 & 2</button>
+        <!-- Chart -->
+        <canvas id="myChart"></canvas>
+        <script type="text/javascript" src="Chart.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        <!-- Configuration Options -->
+        <button id="configurationButton">Configuration</button>
+        <label id="pswdText" for="pswd">Enter password: </label>
+        <input type="password" id="pswd">
+        <!-- Monitoring Mode -->
+        <button id="onlyMonitoringButton" hidden>only Monitoring</button>
+        <!-- Machine Angle Offset -->
+        <button id="setMachineAngleOffsetButton" hidden>Set Offset</button>
+        <input type="number" id="InputMachineAngleOffset" value="180" hidden>
+        <output id="outputMachineAngle" hidden>177</output>   
+        <!-- Machine Angle Calibration -->
+        <button id="calibrateButton" hidden>Activate Calibration</button>
+        <output id="outputCalibHigh" hidden>4095</output>
+        <output id="outputCalibLow" hidden>0</output>
+        <!-- Opening / Closing times -->
+        <button id="openingClosingButton" hidden>Set Timing</button>
+        <input type="number" id="InputOpeningTime" value="70" hidden>
+        <input type="number" id="InputClosingTime" value="270" hidden>
+        <p><span id="text20" hidden>Weft Brake Opening [°]:</span></p>
+        <p><span id="text21" hidden>Weft Brake Closing [°]:</span></p>
+        <!-- IP Adress & SSID-->
+        <button id="ipAdressButton" hidden>Set IP</button>
+        <input type="number" id="ipInput1" value="192" hidden>
+        <input type="number" id="ipInput2" value="168" hidden>
+        <input type="number" id="ipInput3" value="0" hidden>
+        <input type="number" id="ipInput4" value="101" hidden>
+        <input type="text" id="ssidInput" value="saati" hidden>
+        <p><span id="textPW" hidden>"mypassword"</span></p>
+        <!-- ChartYLimit -->
+        <button id="chartYLimitButton" hidden>Set Y-Limit</button>
+        <input type="number" id="chartYLimit" value="50" hidden>
+        <!-- lines -->
+        <svg id="svgLineTop" style="position:absolute; top:90px; left:0px;" height="8px" width="1150px"><line x1="10px" y1="0px" x2="1130px" y2="0px" style="stroke:black;stroke-width:5" /></svg>
+        <svg id="svgLineBottom" style="position:absolute; top:250px; left:0px;" height="8px" width="1150px"><line x1="10px" y1="0px" x2="1130px" y2="0px" style="stroke:black;stroke-width:6" /></svg>
+        <svg id="svgLineMiddle" style="position:absolute; top:90px; left:500px;" height="160px" width="8px"><line x1="0px" y1="0px" x2="0px" y2="160px" style="stroke:black;stroke-width:6" /></svg>
+        <svg id="svgLineUnderneath" style="position:absolute; top:800px; left:0px;" height="8px" width="1150px"><line x1="10px" y1="0px" x2="1130px" y2="0px" style="stroke:black;stroke-width:6" /></svg>
+    </body>
+</html>
